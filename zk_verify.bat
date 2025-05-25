@@ -1,0 +1,2 @@
+cargo run -- zkverify
+pause
