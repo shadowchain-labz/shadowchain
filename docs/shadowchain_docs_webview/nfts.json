@@ -1,0 +1,8 @@
+
+{
+  "nfts": [
+    { "id": 1, "name": "Dark Angel #1", "owner": "alice" },
+    { "id": 2, "name": "Genesis Flame", "owner": "bob" },
+    { "id": 3, "name": "ShadowTiger", "owner": "charlie" }
+  ]
+}

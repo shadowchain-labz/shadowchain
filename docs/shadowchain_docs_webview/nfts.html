@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShadowChain NFTs</title>
+    <style>
+        body { font-family: sans-serif; background: #111; color: #eee; padding: 2rem; }
+        h1 { color: #00ffc3; }
+        .nft {
+            background: #222;
+            border: 1px solid #00ffc3;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 ShadowChain NFTs</h1>
+    <div id="nft-list"></div>
+    <script>
+        fetch("nfts.json")
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById("nft-list");
+                data.nfts.forEach(nft => {
+                    const div = document.createElement("div");
+                    div.className = "nft";
+                    div.innerHTML = `<strong>ID:</strong> ${nft.id}<br><strong>Name:</strong> ${nft.name}<br><strong>Owner:</strong> ${nft.owner}`;
+                    list.appendChild(div);
+                });
+            });
+    </script>
+</body>
+</html>
