@@ -1,0 +1,22 @@
+{
+  "nfts": [
+    {
+      "id": 1,
+      "name": "Dark Angel #1",
+      "owner": "alice",
+      "image_url": "images/dark_angel_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Genesis Flame",
+      "owner": "bob",
+      "image_url": "images/genesis_flame.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Shadow Tiger",
+      "owner": "charlie",
+      "image_url": "images/shadow_tiger.jpg"
+    }
+  ]
+}
